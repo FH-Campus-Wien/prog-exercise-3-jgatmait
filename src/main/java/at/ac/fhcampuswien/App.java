@@ -1,6 +1,6 @@
 package at.ac.fhcampuswien;
 
-import java.util. Arrays;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -34,8 +34,9 @@ public class App {
         int[] myarray3={3,4,5,6,7};
         System.out.println(checkDigit(myarray3));
 
-
     }
+
+
     // Implement all methods as public static
     //Aufgabe 1
     public static void oneMonthCalendar(int numberofdays, int whichdaystart){
@@ -51,6 +52,7 @@ public class App {
         }
         System.out.println();
     }
+
     // Aufgabe 2
     public static long[] lcg(long seed) {
         long[] randomNumbers;
@@ -61,19 +63,16 @@ public class App {
             x = ((a * x + c) % m);
             randomNumbers[i] = x;
         }
-
         return randomNumbers;
     }
 
 
 
     // Aufgabe 3
-
     public static int randomNumberBetweenOneAndHundred(){
         Random random= new Random();
         return random.nextInt(99)+1;
     }
-
     public static void guessingGame(int numberToGuess) {
         int count = 1;
         Scanner scan = new Scanner(System.in);
@@ -103,7 +102,6 @@ public class App {
             if (count == 10) {
                 System.out.println("You lost! Have you ever heard of divide & conquer?");
             }
-
 
       }
 
@@ -164,9 +162,6 @@ public class App {
         return differenz;
         
     }
-
-
-
     
 
 }
